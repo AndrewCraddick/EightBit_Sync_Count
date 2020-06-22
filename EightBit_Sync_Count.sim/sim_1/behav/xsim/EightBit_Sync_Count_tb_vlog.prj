@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Xilinx/Vivado/EightBit_Sync_Count/EightBit_Sync_Count.srcs/sources_1/new/EightBit_Sync_Count.v" -i "../../../../../FourBit_Sync_Count/FourBit_Sync_Count.srcs/sources_1/new/synth_1" -i "../../../../../FourBit_Sync_Count/FourBit_Sync_Count.srcs/sources_1/new/.jobs" --include "../../../../EightBit_Sync_Count.srcs/sources_1/new" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/EightBit_Sync_Count.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/imports/new/clock_divider.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/Binary_to_BCD.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/RefreshCounter.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/BCD_control.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/anode_control.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/BCD_to_Cathodes.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/seven_seg_controller.v" \
+"../../../../EightBit_Sync_Count.srcs/sources_1/new/top.v" \
+"../../../../EightBit_Sync_Count.srcs/sim_1/new/EightBit_Sync_Count_tb.v" \
+"../../../../EightBit_Sync_Count.srcs/sim_1/new/clock_divider_tb.v" \
+"../../../../EightBit_Sync_Count.srcs/sim_1/new/Binary_to_BCD_tb.v" \
+"../../../../EightBit_Sync_Count.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
